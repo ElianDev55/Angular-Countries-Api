@@ -1,0 +1,19 @@
+
+<h1>By Capital Page</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <shared-shearch-box [value]="value"  [placeholder]="placeholder" (term)="searchByCapital($event)" ></shared-shearch-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <shared-loading-spinner *ngIf="isLoading"/>
+    <countries-table [countries]="coutries"></countries-table>
+  </div>
+</div>
+
+

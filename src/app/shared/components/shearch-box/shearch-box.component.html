@@ -1,0 +1,10 @@
+<!-- (keyup.enter)="search(textInput.value)" -->
+
+<input
+[value]="value"
+type="text"
+[placeholder]="placeholder"
+#textInput
+(keyup)="OnclickPressed(textInput.value)"
+
+>
